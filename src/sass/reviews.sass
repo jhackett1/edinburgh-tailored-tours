@@ -1,7 +1,36 @@
 .reviews
     background-color: $yellow
     color: $grey1
-    padding: 50px 0px 100px 0px
+    padding: 70px 20px 100px 20px
 
 .reviews__headline
     color: $grey1
+    margin-bottom: 50px
+
+.reviews__grid
+    @media screen and (min-width: 800px)
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+
+.reviews__review
+    margin-bottom: 40px
+    text-align: center
+
+.reviews__stars
+    display: block
+    letter-spacing: 6px
+    margin-bottom: 10px
+    @media screen and (min-width: 800px)
+        font-size: 1.8em
+
+.reviews__quote
+    font-style: italic
+    font-size: 1.5em
+    font-weight: 100
+    display: block
+    margin-bottom: 10px
+
+.reviews__citation
+    font-weight: bold
+    font-size: 0.9em
+    font-style: normal

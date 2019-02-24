@@ -39,14 +39,14 @@
             <p class="hero__subheadline">Because one size doesn't fit all. Launching later this year</p>
                     <a href="#" class="button hero__button">Enquire now</a>
                 </aside>
-        <aside class="hero__background"></aside>
+        <aside class="hero__background parallax"></aside>
     </section>
 
     <section class="offering">
         <div class="container offering__inner">
 
             <aside class="offering__card">
-                <img class="offering__image" alt="" src="/img/offering_1.jpg"/>
+                <img class="offering__image parallax-image" alt="" src="/img/offering_1.jpg"/>
                 <div class="offering__card-inner">
                     <p class="offering__kicker">Lorem ipsum</p>
                     <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
@@ -55,7 +55,7 @@
             </aside>
 
             <aside class="offering__card">
-                <img class="offering__image" alt="" src="/img/offering_2.jpg"/>
+                <img class="offering__image parallax-image" alt="" src="/img/offering_2.jpg"/>
                 <div class="offering__card-inner">
                     <p class="offering__kicker">Lorem ipsum</p>
                     <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
@@ -69,19 +69,37 @@
     <section class="recent-photos">
         <h2 class="section-headline recent-photos__headline">Recent photos</h2>
         <p class="recent-photos__more">See more on <a href="#">our Instagram</a></p>
-        <ul class="recent-photos__gallery" id="instafeed"></ul>
+        <ul class="recent-photos__gallery triggerable" id="instafeed"></ul>
     </section>
 
     <section class="reviews">
         <div class="container">
             <h2 class="section-headline reviews__headline">What people say</h2>
+            <div class="reviews__grid">
+                <blockquote class="reviews__review">
+                    <span class="reviews__stars">★★★★★</span>
+                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
+                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                </blockquote>
+                <blockquote class="reviews__review">
+                    <span class="reviews__stars">★★★★★</span>
+                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
+                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                </blockquote>
+                <blockquote class="reviews__review">
+                    <span class="reviews__stars">★★★★★</span>
+                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
+                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                </blockquote>
+            </div>
         </div>
     </section>
 
     <section class="enquire">
-        <h2 class="enquire__headline">Make an enquiry</h2>
-        <p class="enquire__lede"></p>
         <form name="enquire" method="post" class="enquire__form" netlify>
+
+        <h2 class="enquire__headline">Make an enquiry</h2>
+        <p class="enquire__lede">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
 
             <label class="form-label" for="their-name">Your name</label>
             <input id="their-name" name="their-name" class="form-field form-field--text"type="text" required/>
@@ -90,24 +108,27 @@
             <input id="their-email" name="email" class="form-field form-field--text"type="email" required/>
 
             <label class="form-label" for="message">Message</label>
-            <textarea id="message" name="message" class="form-field form-field--textarea" required></textarea>
+            <textarea id="message" rows="4" name="message" class="form-field form-field--textarea" required></textarea>
 
-            <button type="submit">Make an enquiry</button>
+            <button class="enquire__submit" type="submit">Enquire now</button>
         </form>
     </section>
 
     <section class="contact">
-        <div class="narrow-container">
+        <div class="contact__inner">
             <h2 class="section-headline contact__headline">Get in touch</h2>
-
+        
+            <div class="contact-detail contact-detail--address">Suite 45, 2 London Bridge Walk<br/>London SE1 2SX</div>
+            <div class="contact-detail contact-detail--phone"><strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 5197</div>
+            <div class="contact-detail contact-detail--email"><a href="mailto:enquire@edinburghtailoredtours.com">enquire@edinburghtailoredtours.com</a></div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; Edinburgh Tailored Tours 2019</p>
-        <ul>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms and conditions</a></li>
+    <footer class="site-footer">
+        <p class="site-footer__copyright">&copy; Edinburgh Tailored Tours 2019</p>
+        <ul class="site-footer__links">
+            <li class="site-footer__item"><a class="site-footer__link" href="#">Privacy policy</a></li>
+            <li class="site-footer__item"><a class="site-footer__link" href="#">Terms and conditions</a></li>
         </ul>
     </footer>
 

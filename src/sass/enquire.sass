@@ -1,7 +1,62 @@
 .enquire
-    max-width: 600px
+    margin: -50px auto -50px auto
+    padding: 0px 20px
+    max-width: 550px
+
+.enquire__form
+    padding: 40px
     background-color: white
     border-radius: 4px
-    overflow: hidden
+    // overflow: hidden
     box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.2)
-    margin: -50px auto 20px auto
+    position: relative
+    padding-bottom: 90px
+
+
+.enquire__headline
+    margin-bottom: 20px
+    font-size: 2em
+
+.enquire__lede
+    color: $grey2
+    margin-bottom: 30px
+
+.form-label
+    display: block
+    font-size: 0.85em
+    margin-bottom: 5px
+    color: $grey2
+
+.form-field
+    display: block
+    width: 100%
+    border: 1px solid transparentize($grey2, 0.9)
+    margin-bottom: 20px
+    font-size: 1em
+    border-radius: 4px
+    padding: 10px
+    font-family: $sans-stack
+    background-color: rgba(0,0,0,0.02)
+    color: $grey1
+
+.enquire__submit
+    display: inline-block
+    background: $yellow
+    border-radius: 0px 0px 4px 4px
+    border: none
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: bold
+    letter-spacing: 2px
+    font-size: 0.8em
+    color: black
+    width: 100%
+    padding: 25px
+    position: absolute
+    bottom: 0px
+    left: 0
+    right: 0
+    cursor: pointer
+    transition: 0.2s ease-out
+    &:hover
+        background-color: $darkYellow

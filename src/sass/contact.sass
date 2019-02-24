@@ -1,0 +1,32 @@
+.contact
+    background: rgba(255,255,255,0.05)
+    padding: 120px 0px 50px 0px
+    color: white
+
+.contact__inner
+    max-width: $narrowWidth
+    margin: 0 auto
+
+.contact__headline
+    margin-bottom: 30px
+
+.contact-detail
+    margin-bottom: 30px
+    font-size: 1.1em
+    line-height: 1.5em
+    padding-left: 60px
+    position: relative
+    &:after
+        content: ""
+        display: block
+        width: 35px
+        height: 35px
+        border-radius: 100%
+        background: $yellow
+        position: absolute
+        top: 50%
+        left: 0px
+        transform: translateY(-50%)
+
+.contact-detail--email a
+    color: $yellow

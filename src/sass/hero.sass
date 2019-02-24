@@ -2,14 +2,6 @@
     height: 100vh
     position: relative
 
-
-@keyframes fadeIn
-    from
-        filter: brightness(0)
-    to
-        filter: brightness(1)
-
-
 .hero__background
     background-image: url("/img/hero.jpg")
     position: absolute
@@ -20,8 +12,9 @@
     background-size: cover
     background-position: center
     opacity: 0.4
-    z-index: 2
-    animation: fadeIn 3s ease-in-out
+    z-index: -1
+    // transition: 0.1s
+    will-change: transform
     &::after
         content: ""
         position: absolute
@@ -46,8 +39,12 @@
     font-size: 2em
     margin-bottom: 15px
     line-height: 1.4em
-
+    color: white
+    @media screen and (min-width: 1000px)
+        font-size: 2.5em
+    
 .hero__subheadline
     margin-bottom: 25px
     font-size: 1.1em
-    line-height: 1.4em
+    line-height: 1.4em    
+    color: white
