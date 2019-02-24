@@ -22,25 +22,23 @@ window.addEventListener("scroll", () => {
 
 
 // Asynchronous form submission
-const form = document.querySelector("form")
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
+// const form = document.querySelector("form")
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault()
 
-    // Disable form
-    const elements = form.elements
-    for (var i = 0, len = elements.length; i < len; ++i) {
-        elements[i].disabled = true
-    }
+//     // Disable form
+//     const elements = form.elements
+//     for (var i = 0, len = elements.length; i < len; ++i) {
+//         elements[i].disabled = true
+//     }
 
-    // Submit data
-    let formData = new FormData(form)
-    fetch(form.getAttribute("action"), {
-        method: "post",
-        body: formData
-    })
-        .then(()=>{
-            form.classList.add("enquire__form--submitted")
-
-
-        })
-})
+//     // Submit data
+//     let formData = new FormData(form)
+//     fetch(form.getAttribute("action"), {
+//         method: "post",
+//         body: formData
+//     })
+//         .then(()=>{
+//             form.classList.add("enquire__form--submitted")
+//         })
+// })
