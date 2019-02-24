@@ -53,6 +53,7 @@ const compileSass = () => {
             includePaths: ["node_modules"]
         }).on("error", sass.logError))
         .pipe(dest("dist/css"))
+        .pipe(browserSync.stream())
 }
 // Minify CSS
 const minifyCss = () => {
@@ -75,6 +76,7 @@ const compressImages = () => {
 // Watch images folder
 const watchImages = () => {
     watch(["./src/img/*"], compressImages)
+        .on("change", browserSync.reload)
 }
 
 
@@ -147,6 +149,7 @@ const watchJs = (cb) => {
 // Watch for changes to static files, then copy them
 const watchFiles = () => {
     watch(["src/static/**/*.*"], copyFiles)
+        .on("change", browserSync.reload)
 }
 // Copy other files
 const copyFiles = () => {

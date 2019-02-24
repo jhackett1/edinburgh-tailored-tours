@@ -1,0 +1,30 @@
+
+    
+.recent-photos__gallery
+    display: grid
+    grid-template-columns: 1fr 1fr
+    @media screen and (min-width: 700px)
+        grid-template-columns: 1fr 1fr 1fr
+    @media screen and (min-width: 1000px)
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+
+.recent-photos__more
+    font-weight: 100
+    opacity: 0.7
+    text-align: center
+    margin-bottom: 25px
+
+.recent-photos__link
+    overflow: hidden
+    @media screen and (min-width: 1000px)
+        &:last-of-type
+            display: none
+
+.recent-photos__image
+    width: 100%
+    height: auto
+    display: block
+    transition: 0.2s ease-out
+    &:hover
+        transform: scale(1.05)
+        filter: brightness(1.2)

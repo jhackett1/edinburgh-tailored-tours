@@ -6,26 +6,28 @@
     <title>Edinburgh Tailored Tours</title>
     <link href="/css/main.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
-{{derpo}}
-
     <header class="site-header">
-        <div class="container">
+        <div class="container site-header__inner">
             <a href="/">
-                <img alt="Edinburgh Tailored Tours" src="/logo.svg"/>
+                <img class="site-header__logo" alt="Edinburgh Tailored Tours" src="/img/logo.svg"/>
             </a>
             <ul class="site-header__social-list">
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link"></a>
+                    <a href="#" class="site-header__social-list-link fab fa-facebook">
+                    </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link"></a>
+                    <a href="#" class="site-header__social-list-link fab fa-instagram">
+                    </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link"></a>
+                    <a href="#" class="site-header__social-list-link fab fa-twitter">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -37,27 +39,27 @@
             <p class="hero__subheadline">Because one size doesn't fit all. Launching later this year</p>
                     <a href="#" class="button hero__button">Enquire now</a>
                 </aside>
-        <aside class="hero__video"></aside>
+        <aside class="hero__background"></aside>
     </section>
 
     <section class="offering">
         <div class="container offering__inner">
 
             <aside class="offering__card">
-                <img class="offering__image" alt="" src=""/>
+                <img class="offering__image" alt="" src="/img/offering_1.jpg"/>
                 <div class="offering__card-inner">
-                    <p class="offering__kicker"></p>
-                    <h3 class="offering__headline"></h3>
-                    <p class="offering__description"></p>
+                    <p class="offering__kicker">Lorem ipsum</p>
+                    <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                    <p class="offering__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.</p>
                 </div>
             </aside>
 
             <aside class="offering__card">
-                <img class="offering__image" alt="" src=""/>
+                <img class="offering__image" alt="" src="/img/offering_2.jpg"/>
                 <div class="offering__card-inner">
-                    <p class="offering__kicker"></p>
-                    <h3 class="offering__headline"></h3>
-                    <p class="offering__description"></p>
+                    <p class="offering__kicker">Lorem ipsum</p>
+                    <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                    <p class="offering__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.</p>
                 </div>
             </aside>
 
@@ -66,7 +68,7 @@
 
     <section class="recent-photos">
         <h2 class="section-headline recent-photos__headline">Recent photos</h2>
-        <p>See more on <a href="#">our Instagram</a></p>
+        <p class="recent-photos__more">See more on <a href="#">our Instagram</a></p>
         <ul class="recent-photos__gallery" id="instafeed"></ul>
     </section>
 
@@ -79,7 +81,7 @@
     <section class="enquire">
         <h2 class="enquire__headline">Make an enquiry</h2>
         <p class="enquire__lede"></p>
-        <form action="#" method="post" class="enquire__form">
+        <form name="enquire" method="post" class="enquire__form" netlify>
 
             <label class="form-label" for="their-name">Your name</label>
             <input id="their-name" name="their-name" class="form-field form-field--text"type="text" required/>

@@ -3,8 +3,8 @@ import Instafeed from "instafeed.js"
 // Documentation at http://instafeedjs.com/
 new Instafeed({
     limit: 6,
-    resolution: "low_resolution",
-    template: "<a href='{{link}}'><img alt='{{caption}}' src='{{image}}' /></a>",
+    resolution: "standard_resolution",
+    template: "<a target='blank' class='recent-photos__link' href='{{link}}'><img class='recent-photos__image' alt='{{caption}}' src='{{image}}' /></a>",
     get: "user",
     userId: "7048114720",
     tagName: "instafeed",

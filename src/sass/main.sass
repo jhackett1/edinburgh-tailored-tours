@@ -3,6 +3,9 @@
 *
     font-family: $sans-stack
     color: white
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
 body
     background-color: $grey1
@@ -10,7 +13,37 @@ body
 h1, h2, h3, h4, h5, h6
     font-family: $serif-stack
 
+a
+    &:hover
+        text-decoration: none
+
 .container
     margin-left: auto
     margin-right: auto
     max-width: $maxWidth
+
+.button
+    display: inline-block
+    background: $yellow
+    border-radius: 4px
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: bold
+    letter-spacing: 2px
+    font-size: 0.8em
+    color: black
+    padding: 15px 20px
+    box-shadow: 0 8px 10px -7px rgba(0,0,0,.2)
+
+.section-headline
+    text-align: center
+    font-size: 2em
+    margin-bottom: 10px
+
+
+@import 'header'
+@import 'hero'
+@import 'offering'
+@import 'instagram'
+@import 'reviews'
+@import 'enquire'
