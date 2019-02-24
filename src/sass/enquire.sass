@@ -12,6 +12,9 @@
     position: relative
     padding-bottom: 90px
 
+.enquire__form--submitted
+    .enquire__thanks
+        display: block
 
 .enquire__headline
     margin-bottom: 20px
@@ -20,6 +23,22 @@
 .enquire__lede
     color: $grey2
     margin-bottom: 30px
+
+.enquire__thanks
+    padding: 25px
+    margin-bottom: 20px
+    border-radius: 4px
+    text-align: center
+    background: transparentize($yellow, 0.2)
+    display: none
+    h3
+        font-family: $sans-stack
+        margin-bottom: 10px
+        font-size: 1em
+        text-transform: uppercase
+        font-weight: bold
+        letter-spacing: 2px
+        font-size: 0.8em
 
 .form-label
     display: block
@@ -38,6 +57,8 @@
     font-family: $sans-stack
     background-color: rgba(0,0,0,0.02)
     color: $grey1
+    &:disabled
+        color: rgba(0,0,0,0.5)
 
 .enquire__submit
     display: inline-block
@@ -49,7 +70,7 @@
     font-weight: bold
     letter-spacing: 2px
     font-size: 0.8em
-    color: black
+    color: $grey1
     width: 100%
     padding: 25px
     position: absolute
@@ -60,3 +81,8 @@
     transition: 0.2s ease-out
     &:hover
         background-color: $darkYellow
+
+    &:disabled
+        background: rgba(0,0,0,0.2)
+        color: rgba(0,0,0,0.5)
+        pointer-events: none

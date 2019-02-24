@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -18,15 +19,15 @@
             </a>
             <ul class="site-header__social-list">
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-facebook">
+                    <a href="#" class="site-header__social-list-link fab fa-facebook"><span class="visually-hidden">Facebook</span>
                     </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-instagram">
+                    <a href="#" class="site-header__social-list-link fab fa-instagram"><span class="visually-hidden">Instagram</span>
                     </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-twitter">
+                    <a href="#" class="site-header__social-list-link fab fa-twitter"><span class="visually-hidden">Twitter</span>
                     </a>
                 </li>
             </ul>
@@ -37,7 +38,7 @@
         <aside class="hero__text">
             <h2 class="hero__headline">Private tours, tailored to you</h2>	
             <p class="hero__subheadline">Because one size doesn't fit all. Launching later this year</p>
-                    <a href="#" class="button hero__button">Enquire now</a>
+                    <a href="#enquire" class="button hero__button">Enquire now</a>
                 </aside>
         <aside class="hero__background parallax"></aside>
     </section>
@@ -69,7 +70,7 @@
     <section class="recent-photos">
         <h2 class="section-headline recent-photos__headline">Recent photos</h2>
         <p class="recent-photos__more">See more on <a href="#">our Instagram</a></p>
-        <ul class="recent-photos__gallery triggerable" id="instafeed"></ul>
+        <div class="recent-photos__gallery triggerable" id="instafeed"></div>
     </section>
 
     <section class="reviews">
@@ -95,11 +96,16 @@
         </div>
     </section>
 
-    <section class="enquire">
-        <form name="enquire" method="post" class="enquire__form" netlify>
+    <section class="enquire" id="enquire">
+        <form name="enquire" method="post" class="enquire__form" netlify action="meh">
 
         <h2 class="enquire__headline">Make an enquiry</h2>
         <p class="enquire__lede">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+
+            <div class="enquire__thanks" aria-live="polite">
+                <h3>Thanks for contacting us!</h3>
+                <p>We'll be in touch soon.</p>
+            </div>
 
             <label class="form-label" for="their-name">Your name</label>
             <input id="their-name" name="their-name" class="form-field form-field--text"type="text" required/>

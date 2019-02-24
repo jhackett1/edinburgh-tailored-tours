@@ -21,21 +21,26 @@ window.addEventListener("scroll", () => {
 })
 
 
-// Trigger actions on scroll into viewport
-const elementsToTrigger = document.querySelectorAll(".triggerable")
+// Asynchronous form submission
+const form = document.querySelector("form")
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
 
-window.addEventListener("scroll", () => {
+    // Disable form
+    const elements = form.elements
+    for (var i = 0, len = elements.length; i < len; ++i) {
+        elements[i].disabled = true
+    }
+
+    // Submit data
+    let formData = new FormData(form)
+    fetch(form.getAttribute("action"), {
+        method: "post",
+        body: formData
+    })
+        .then(()=>{
+            form.classList.add("enquire__form--submitted")
 
 
-    // elementsToTrigger.forEach((element) => {
-
-        const heightFromTopDocument = element.getBoundingClientRect().top
-
-        console.log("Element height: ", heightFromTopDocument)
-    //     // console.log("Scroll position: ", scrollPosition)
-
-    //     // const heightFromTopViewport = scrollPosition 
-
-
-    // })
+        })
 })

@@ -1,6 +1,6 @@
 .contact
     background: rgba(255,255,255,0.05)
-    padding: 120px 0px 50px 0px
+    padding: 120px 20px 50px 20px
     color: white
 
 .contact__inner
@@ -18,15 +18,27 @@
     position: relative
     &:after
         content: ""
+        font-family: font-awesome
+        color: $grey1
         display: block
-        width: 35px
-        height: 35px
+        width: 40px
+        height: 40px
         border-radius: 100%
         background: $yellow
         position: absolute
         top: 50%
         left: 0px
         transform: translateY(-50%)
+        background-size: 20px 20px
+        background-position: center
+        background-repeat: no-repeat
+
+.contact-detail--address:after
+    background-image: url('/img/user-regular.svg')        
+.contact-detail--email:after
+    background-image: url('/img/envelope-regular.svg')
+.contact-detail--phone:after
+    background-image: url('/img/phone-solid.svg')
 
 .contact-detail--email a
     color: $yellow
