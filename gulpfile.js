@@ -1,12 +1,17 @@
 const { src, dest, watch, series, parallel } = require("gulp")
 const sass = require("gulp-sass")
 const webpack = require("webpack-stream")
-const path = require("path")
+// const path = require("path")
 const cleanCss = require("gulp-clean-css")
-const imagemin = require('gulp-imagemin')
-const browserSync = require('browser-sync').create()
-const eslint = require('gulp-eslint')
+const imagemin = require("gulp-imagemin")
+const browserSync = require("browser-sync").create()
+const eslint = require("gulp-eslint")
+// Set sass compiler
+sass.compiler = require("node-sass")
 
+const fs = require("fs")
+const nunjucks = require("gulp-nunjucks")
+const yaml = require("yaml")
 
 // Run live reload server
 const runServer = () => {
@@ -24,14 +29,13 @@ const runServer = () => {
 
 // Watch for HTML changes, then compile
 const watchHtml = () => {
-    watch(["./src/*.html"], (cb) => {
-        copyHtml()
-    })
-        .on('change', browserSync.reload)
+    watch("./src/*.html", compileHtml)
+        .on("change", browserSync.reload)
 }
-// Copy HTML files
-const copyHtml = () => {
+// Compile HTML templates
+const compileHtml = () => {
     return src("./src/*.html")
+        .pipe(nunjucks.compile(yaml.parse(fs.readFileSync("./content.yml", "utf8"))))
         .pipe(dest("dist"))
 }
 
@@ -40,13 +44,9 @@ const copyHtml = () => {
 // SASS
 ////////////
 
-// Set sass compiler
-sass.compiler = require("node-sass")
 // Watch for sass changes, then compile
 const watchSass = () => {
-    watch(["src/sass/*"], (cb)=>{
-        compileSass()
-    })
+    watch(["src/sass/*"], compileSass)
 }
 // Compile sass
 const compileSass = () => {
@@ -74,6 +74,10 @@ const compressImages = () => {
         .pipe(imagemin())
         .pipe(dest("dist/img"))
 }
+// Watch images folder
+const watchImages = () => {
+    watch(["./src/img/*"], compressImages)
+}
 
 
 ////////////
@@ -85,6 +89,7 @@ const lint = () => {
     return src("./src/js/*.js")
         .pipe(eslint())
         .pipe(eslint.format())
+        // Make sure that lint errors break the build
         .pipe(eslint.failAfterError())
 }
 // Production webpack configuration object
@@ -137,9 +142,26 @@ const watchJs = (cb) => {
 }
 
 
+////////////
+// OTHER FILES
+////////////
+
+// Watch for changes to static files, then copy them
+const watchFiles = () => {
+    watch(["src/static/**/*.*"], copyFiles)
+}
+// Copy other files
+const copyFiles = () => {
+    return src([
+        "./src/static/**/*.*"
+    ])
+        .pipe(dest("dist/static"))
+}
+
+
 // Lint only
 exports.lint = lint
 // Production build task
-exports.build = series(copyHtml, compileSass, minifyCss, lint, transpileJs, compressImages)
+exports.build = series(compileHtml, compileSass, minifyCss, lint, transpileJs, compressImages, copyFiles)
 // Default watch task
-exports.default = parallel(runServer, watchHtml, watchSass, watchJs)
+exports.default = parallel(runServer, watchHtml, watchSass, watchJs, watchImages, watchFiles)

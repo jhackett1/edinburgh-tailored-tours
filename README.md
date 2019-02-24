@@ -8,6 +8,7 @@ Includes:
 - Compiles sass
 - Compresses images
 - Hot reloads
+- Nunjucks templating, passing in dynamic data specified in the `content.yml` file
 
 ## Getting started
 

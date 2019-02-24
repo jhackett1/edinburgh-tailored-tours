@@ -1,0 +1,2 @@
+# Content variables for the nunjucks files live in here
+myVar: "foobar"
