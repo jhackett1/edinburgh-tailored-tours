@@ -1,17 +1,15 @@
 const { src, dest, watch, series, parallel } = require("gulp")
 const sass = require("gulp-sass")
 const webpack = require("webpack-stream")
-// const path = require("path")
+const fs = require("fs")
+const nunjucks = require("gulp-nunjucks")
+const yaml = require("yaml")
 const cleanCss = require("gulp-clean-css")
 const imagemin = require("gulp-imagemin")
 const browserSync = require("browser-sync").create()
 const eslint = require("gulp-eslint")
-// Set sass compiler
 sass.compiler = require("node-sass")
 
-const fs = require("fs")
-const nunjucks = require("gulp-nunjucks")
-const yaml = require("yaml")
 
 // Run live reload server
 const runServer = () => {
