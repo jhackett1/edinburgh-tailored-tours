@@ -9,4 +9,4 @@ new Instafeed({
     userId: "7048114720",
     tagName: "instafeed",
     accessToken: "7048114720.1677ed0.53b1176ce6c24e5fa9e0e0666e59057b"
-}).run()
+}).run();

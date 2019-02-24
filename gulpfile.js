@@ -5,6 +5,7 @@ const path = require("path")
 const cleanCss = require("gulp-clean-css")
 const imagemin = require('gulp-imagemin')
 const browserSync = require('browser-sync').create()
+const eslint = require('gulp-eslint')
 
 
 // Run live reload server
@@ -79,6 +80,13 @@ const compressImages = () => {
 // JS
 ////////////
 
+// Lint javascript
+const lint = () => {
+    return src("./src/js/*.js")
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError())
+}
 // Production webpack configuration object
 let webpackConfig = {
     mode: "production",
@@ -129,7 +137,9 @@ const watchJs = (cb) => {
 }
 
 
+// Lint only
+exports.lint = lint
 // Production build task
-exports.build = series(copyHtml, compileSass, minifyCss, transpileJs, compressImages)
+exports.build = series(copyHtml, compileSass, minifyCss, lint, transpileJs, compressImages)
 // Default watch task
 exports.default = parallel(runServer, watchHtml, watchSass, watchJs)
