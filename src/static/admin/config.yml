@@ -4,8 +4,8 @@ backend:
 
 # logo_url: https://edinburghtailoredtours.com/img/favicon.jpg
 
-media_folder: "src/img"
-public_folder: "/img"
+media_folder: "fuck"
+public_folder: "fuck"
 
 collections:
   - label: "Pages"

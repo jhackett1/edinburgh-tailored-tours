@@ -1,4 +1,4 @@
 ---
-what: Private tours, tailored to you
+what: Private tours tailored to you
 ---
 derpo
