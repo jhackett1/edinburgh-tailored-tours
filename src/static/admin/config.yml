@@ -18,7 +18,7 @@ collections:
     files:
       - label: "Home page"
         name: "home"
-        file: "./content1.yml"
+        file: "./content.1.yml"
         # file: "./content.yml"
         fields:
 
