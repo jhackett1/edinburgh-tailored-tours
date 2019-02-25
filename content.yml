@@ -1,23 +1,28 @@
 siteHeadline: 'Private Tours, Tailored to You'
 siteSubheadline: Because one size doesn't fit all
 offering1Image: /img/offering_1.jpg
-offering1Kicker: Choose from our Award-winning Private Tours
-offering1Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+offering1Kicker: Don't be part of the Crowd.
+offering1Headline: Choose a Private Edinburgh Tailored Tour
 offering1Description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor
-  sapien, ultricies vitae lorem id, blandit ornare enim.
+  We offer a range of fully customisable private day tours. We keep them
+  private, just for you, your family or group, so we can make sure the pace,
+  style and content is perfect for you.
 offering2Image: /img/offering_2.jpg
-offering2Kicker: Or Tailor your own Unique Edinburgh Adventure
-offering2Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+offering2Kicker: Experience Edinburgh from a different angle.
+offering2Headline: Or custom-design your own unique Edinburgh adventure
 offering2Description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor
-  sapien, ultricies vitae lorem id, blandit ornare enim.
-review1Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
-review1Citation: Firstname Surname via Yelp
-review2Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
-review2Citation: Firstname Surname via Yelp
-review3Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
-review3Citation: Firstname Surname via Yelp
+  We'll create a one-of-a-kind private experience for your unique occasion or
+  work event.
+review1Text: >-
+  Our guide Angus showed me and my family the best of Edinburgh in a delightful
+  and engaging way.
+review1Citation: ' Anne-Sophie via Facebook'
+review2Text: 'Perfectly engaging for our teens, thanks for bringing this city to life!'
+review2Citation: Caitlin via Yelp
+review3Text: >-
+  We had a private whisky tasting in an underground vault. Once-in-a-life-time
+  experience!
+review3Citation: Hank via Tripadvisor
 enquiryTitle: Make an enquiry
 enquiryDescription: >-
   Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet,
@@ -25,8 +30,8 @@ enquiryDescription: >-
 enquiryThanks: We'll reply to your enquiry very soon.
 address: 'Suite 45, 2 London Bridge Walk <br/>London SE1 2SX'
 phone: <strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519
-email: enquire@edinburghtailoredtours.com
+email: hello@edinburghtailoredtours.com
 facebook: 'https://www.facebook.com/edinburghtailoredtours'
 instagram: 'https://www.instagram.com/edinburghtailoredtours/'
-twitter: 'http://twitter.com'
+twitter: 'http://twitter.com/edtailoredtours'
 siteDescription: 'Tailored, private tours of the Scottish capital city of Edinburgh'
