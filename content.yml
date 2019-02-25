@@ -1,10 +1,12 @@
 siteHeadline: Lorem ipsum dolor sit amet
 siteSubheadline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+offering1Image: /img/offering_1.jpg
 offering1Kicker: Lorem ipsum
 offering1Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 offering1Description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor
   sapien, ultricies vitae lorem id, blandit ornare enim.
+offering2Image: /img/offering_2.jpg
 offering2Kicker: Lorem ipsum
 offering2Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 offering2Description: >-
@@ -20,6 +22,7 @@ enquiryTitle: Make an enquiry
 enquiryDescription: >-
   Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet,
   consectetur adipiscing.
+enquiryThanks: We'll reply to your enquiry very soon.
 address: 'Suite 45, 2 London Bridge Walk <br/>London SE1 2SX'
 phone: <strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519
 email: enquire@edinburghtailoredtours.com

@@ -23,9 +23,19 @@ collections:
           - {label: Site headline, name: siteHeadline, widget: string}
           - {label: Site subheadline, name: siteSubheadline, widget: string}
 
+          - label: "Image (left panel)"
+            name: "offering1Image"
+            widget: "image"
+            default: "/img/offering_1.jpg"
+
           - {label: Kicker (left panel), name: offering1Kicker, widget: string}
           - {label: Headline (left panel), name: offering1Headline, widget: string}
           - {label: Description (left panel), name: offering1Description, widget: string}
+
+          - label: "Image (right panel)"
+            name: "offering2Image"
+            widget: "image"
+            default: "/img/offering_1.jpg"
 
           - {label: Kicker (right panel), name: offering2Kicker, widget: string}
           - {label: Headline (right panel), name: offering2Headline, widget: string}
@@ -42,6 +52,8 @@ collections:
 
           - {label: Enquiry panel headline, name: enquiryTitle, widget: string}
           - {label: Enquiry panel description, name: enquiryDescription, widget: string}
+
+          - {label: Thank you message, name: enquiryThanks, widget: string, hint: "Users see this after submitting an enquiry"}
 
           - {label: Address, name: address, widget: string}
           - {label: Phone, name: phone, widget: string}
