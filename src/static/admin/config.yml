@@ -13,6 +13,8 @@ collections:
     delete: false
     editor:
       preview: false
+    extension: yml
+    format: yml
     files:
       - label: "Home page"
         name: "home"
