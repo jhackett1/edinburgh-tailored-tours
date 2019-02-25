@@ -35,18 +35,24 @@
                 <img class="site-header__logo" alt="Edinburgh Tailored Tours" src="/img/logo.svg"/>
             </a>
             <ul class="site-header__social-list">
+                {% if facebook %}
                 <li class="site-header__social-list-item">
                     <a href="{{ facebook }}" class="site-header__social-list-link fab fa-facebook"><span class="visually-hidden">Facebook</span>
                     </a>
                 </li>
+                {% endif %}
+                {% if instagram %}
                 <li class="site-header__social-list-item">
                     <a href="{{ instagram }}" class="site-header__social-list-link fab fa-instagram"><span class="visually-hidden">Instagram</span>
                     </a>
                 </li>
+                {% endif %}
+                {% if twitter %}
                 <li class="site-header__social-list-item">
                     <a href="{{ twitter }}" class="site-header__social-list-link fab fa-twitter"><span class="visually-hidden">Twitter</span>
                     </a>
                 </li>
+                {% endif %}
             </ul>
         </div>
     </header>
