@@ -10,9 +10,10 @@ public_folder: "fuck"
 collections:
   - label: "Pages"
     name: "pages"
-    delete: false
-    editor:
-      preview: false
+    identifier_field: "what"
+    # delete: false
+    # editor:
+    #   preview: false
     files:
       - label: "Home page"
         name: "home"
