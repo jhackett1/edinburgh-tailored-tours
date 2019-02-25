@@ -2,14 +2,18 @@ backend:
   name: git-gateway
   branch: master 
 
-logo_url: https://edinburghtailoredtours.com/img/favicon.jpg
+# logo_url: https://edinburghtailoredtours.com/img/favicon.jpg
 
 media_folder: "src/img"
 public_folder: "/dist/img"
 
+editor:
+  preview: false
+
 collections:
   - label: "Pages"
     name: "pages"
+    delete: false
     files:
       - label: "Home page"
         name: "home"
