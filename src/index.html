@@ -5,19 +5,19 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Tailored, private tours of the Scottish capital city of Edinburgh"/>
+    <meta name="description" content="{{ siteDescription }}"/>
     <link rel="canonical" href="https://edinburghtailoredtours.com/" />
     
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Edinburgh Tailored Tours" />
-    <meta property="og:description" content="Tailored, private tours of the Scottish capital city of Edinburgh" />
+    <meta property="og:description" content="{{ siteDescription }}" />
     <meta property="og:url" content="https://edinburghtailoredtours.com/" />
     <meta property="og:site_name" content="London Tailored Tours" />
     <meta property="og:image" content="http://edinburghtailoredtours.com/img/hero.jpg" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Tailored, private tours of the Scottish capital city of Edinburgh" />
+    <meta name="twitter:description" content="{{ siteDescription }}" />
     <meta name="twitter:title" content="Edinburgh Tailored Tours" />
     <meta name="twitter:image" content="http://edinburghtailoredtours.com/img/hero.jpg" />
 
@@ -36,15 +36,15 @@
             </a>
             <ul class="site-header__social-list">
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-facebook"><span class="visually-hidden">Facebook</span>
+                    <a href="{{ facebook }}" class="site-header__social-list-link fab fa-facebook"><span class="visually-hidden">Facebook</span>
                     </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-instagram"><span class="visually-hidden">Instagram</span>
+                    <a href="{{ instagram }}" class="site-header__social-list-link fab fa-instagram"><span class="visually-hidden">Instagram</span>
                     </a>
                 </li>
                 <li class="site-header__social-list-item">
-                    <a href="#" class="site-header__social-list-link fab fa-twitter"><span class="visually-hidden">Twitter</span>
+                    <a href="{{ twitter }}" class="site-header__social-list-link fab fa-twitter"><span class="visually-hidden">Twitter</span>
                     </a>
                 </li>
             </ul>
@@ -53,8 +53,8 @@
 
     <section class="hero">
         <aside class="hero__text">
-            <h2 class="hero__headline">Private tours, tailored to you</h2>	
-            <p class="hero__subheadline">Because one size doesn't fit all. Launching later this year</p>
+            <h2 class="hero__headline">{{ siteHeadline }}</h2>	
+            <p class="hero__subheadline">{{ siteSubheadline }}</p>
                     <a href="#enquire" class="button hero__button">Enquire now</a>
                 </aside>
         <aside class="hero__background parallax"></aside>
@@ -64,20 +64,20 @@
         <div class="container offering__inner">
 
             <aside class="offering__card">
-                <img class="offering__image parallax-image" alt="" src="/img/offering_1.jpg"/>
+                <img class="offering__image" alt="{{ offering1Headline }}" src="/img/offering_1.jpg"/>
                 <div class="offering__card-inner">
-                    <p class="offering__kicker">Lorem ipsum</p>
-                    <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
-                    <p class="offering__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.</p>
+                    <p class="offering__kicker">{{ offering1Kicker }}</p>
+                    <h3 class="offering__headline">{{ offering1Headline }}</h3>
+                    <p class="offering__description">{{ offering1Description }}</p>
                 </div>
             </aside>
 
             <aside class="offering__card">
-                <img class="offering__image parallax-image" alt="" src="/img/offering_2.jpg"/>
+                <img class="offering__image" alt="{{ offering2Headline }}" src="/img/offering_2.jpg"/>
                 <div class="offering__card-inner">
-                    <p class="offering__kicker">Lorem ipsum</p>
-                    <h3 class="offering__headline">Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
-                    <p class="offering__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.</p>
+                    <p class="offering__kicker">{{ offering2Kicker }}</p>
+                    <h3 class="offering__headline">{{ offering2Headline }}</h3>
+                    <p class="offering__description">{{ offering2Description }}</p>
                 </div>
             </aside>
 
@@ -86,7 +86,7 @@
 
     <section class="recent-photos">
         <h2 class="section-headline recent-photos__headline">Recent photos</h2>
-        <p class="recent-photos__more">See more on <a href="#">our Instagram</a></p>
+        <p class="recent-photos__more">See more on <a href="{{ instagram }}">our Instagram</a></p>
         <div class="recent-photos__gallery triggerable" id="instafeed"></div>
     </section>
 
@@ -96,18 +96,18 @@
             <div class="reviews__grid">
                 <blockquote class="reviews__review">
                     <span class="reviews__stars">★★★★★</span>
-                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
-                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                    <q class="reviews__quote">{{ review1Text }}</q>
+                    <cite class="reviews__citation">{{ review1Citation }}</cite>
                 </blockquote>
                 <blockquote class="reviews__review">
                     <span class="reviews__stars">★★★★★</span>
-                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
-                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                    <q class="reviews__quote">{{ review2Text }}</q>
+                    <cite class="reviews__citation">{{ review2Citation }}</cite>
                 </blockquote>
                 <blockquote class="reviews__review">
                     <span class="reviews__stars">★★★★★</span>
-                    <q class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipiscing</q>
-                    <cite class="reviews__citation">Firstname Surname via Yelp</cite>
+                    <q class="reviews__quote">{{ review3Text }}</q>
+                    <cite class="reviews__citation">{{ review3Citation }}</cite>
                 </blockquote>
             </div>
         </div>
@@ -116,8 +116,8 @@
     <section class="enquire" id="enquire">
         <form name="enquire" method="post" class="enquire__form" data-netlify="true" action="/thanks">
 
-        <h2 class="enquire__headline">Make an enquiry</h2>
-        <p class="enquire__lede">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        <h2 class="enquire__headline">{{ enquiryTitle }}</h2>
+        <p class="enquire__lede">{{ enquiryDescription }}</p>
 
             <!--
             <div class="enquire__thanks" aria-live="polite">
@@ -143,17 +143,17 @@
         <div class="contact__inner">
             <h2 class="section-headline contact__headline">Get in touch</h2>
         
-            <div class="contact-detail contact-detail--address">Suite 45, 2 London Bridge Walk<br/>London SE1 2SX</div>
-            <div class="contact-detail contact-detail--phone"><strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 5197</div>
-            <div class="contact-detail contact-detail--email"><a href="mailto:enquire@edinburghtailoredtours.com">enquire@edinburghtailoredtours.com</a></div>
+            <div class="contact-detail contact-detail--address">{{ address | safe }}</div>
+            <div class="contact-detail contact-detail--phone">{{ phone | safe }}</div>
+            <div class="contact-detail contact-detail--email"><a href="mailto:{{ email }}">{{ email }}</a></div>
         </div>
     </section>
 
     <footer class="site-footer">
         <p class="site-footer__copyright">&copy; Edinburgh Tailored Tours 2019</p>
         <ul class="site-footer__links">
-            <li class="site-footer__item"><a class="site-footer__link" href="#">Privacy policy</a></li>
-            <li class="site-footer__item"><a class="site-footer__link" href="#">Terms and conditions</a></li>
+            <li class="site-footer__item"><a class="site-footer__link" href="https://londontailoredtours.com/privacy-policy/">Privacy policy</a></li>
+            <li class="site-footer__item"><a class="site-footer__link" href="https://londontailoredtours.com/terms-and-conditions/">Terms and conditions</a></li>
         </ul>
     </footer>
 
