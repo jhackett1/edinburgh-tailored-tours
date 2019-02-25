@@ -1,8 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/16a6495a-f68b-491a-95f4-7bd683ca6206/deploy-status)](https://app.netlify.com/sites/pedantic-beaver-72768a/deploys)
 
-# Gulp static web starter kit
-
-Jaye's personal starter kit for gulp/webpack-powered static web projects.
+# Edinburgh Tailored Tours
 
 Includes:
 
