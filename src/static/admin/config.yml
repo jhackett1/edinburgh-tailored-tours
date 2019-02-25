@@ -3,9 +3,8 @@ backend:
   branch: master 
 
 # logo_url: https://edinburghtailoredtours.com/img/favicon.jpg
-
-media_folder: "src/img"
-public_folder: "/dist/img"
+# media_folder: "src/img"
+# public_folder: "/dist/img"
 
 collections:
   - label: "Pages"
