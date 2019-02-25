@@ -13,12 +13,10 @@ collections:
     delete: false
     editor:
       preview: false
-    extension: yml
-    format: yml
     files:
       - label: "Home page"
         name: "home"
-        file: "./content.1.yml"
+        file: "./content.1.md"
         # file: "./content.yml"
         fields:
 
