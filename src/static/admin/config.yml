@@ -18,9 +18,14 @@ collections:
     files:
       - label: "Home page"
         name: "home"
-        file: "./content.yml"
+        file: "./content1.yml"
+        # file: "./content.yml"
         fields:
-          - {label: Site headline, name: siteHeadline, widget: string}
+
+          - {label: What, name: what, widget: string}
+        
+        
+          # - {label: Site headline, name: siteHeadline, widget: string}
           # - {label: Site subheadline, name: siteSubheadline, widget: string}
 
           # - {label: Kicker (left panel), name: offering1Kicker, widget: string}
