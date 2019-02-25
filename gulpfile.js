@@ -156,7 +156,7 @@ const copyFiles = () => {
     return src([
         "./src/static/**/*.*"
     ])
-        .pipe(dest("dist/static"))
+        .pipe(dest("dist"))
 }
 
 
