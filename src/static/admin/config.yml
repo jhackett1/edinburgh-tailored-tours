@@ -7,21 +7,38 @@ backend:
 media_folder: "fuck"
 public_folder: "fuck"
 
-collections:
-  - label: "Pages"
-    name: "pages"
-    identifier_field: "what"
-    # delete: false
-    # editor:
-    #   preview: false
-    files:
-      - label: "Home page"
-        name: "home"
-        file: "./content.1.yml"
-        # file: "./content.yml"
-        fields:
 
-          - {label: What, name: what, widget: string}
+
+collections:
+
+
+  - name: "post"
+    extension: "markdown"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Blog post titles should ideally be around 10-15 words"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    editor:
+      preview: false
+
+  # - label: "Pages"
+  #   name: "pages"
+  #   identifier_field: "what"
+  #   # delete: false
+  #   # editor:
+  #   #   preview: false
+  #   files:
+  #     - label: "Home page"
+  #       name: "home"
+  #       file: "./content.1.yml"
+  #       # file: "./content.yml"
+  #       fields:
+
+  #         - {label: What, name: what, widget: string}
         
         
           # - {label: Site headline, name: siteHeadline, widget: string}
