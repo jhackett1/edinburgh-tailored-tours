@@ -1,32 +1,29 @@
-siteHeadline: Private tours, tailored to you
+siteHeadline: 'Private tours, tailored to youuuu'
 siteSubheadline: Because one size doesn't fit all. Launching later this year
-
 offering1Kicker: Lorem ipsum
-offering1Headline: Lorem ipsum dolor sit amet, consectetur adipiscing
-offering1Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.
-
+offering1Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+offering1Description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor
+  sapien, ultricies vitae lorem id, blandit ornare enim.
 offering2Kicker: Lorem ipsum
-offering2Headline: Lorem ipsum dolor sit amet, consectetur adipiscing
-offering2Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor sapien, ultricies vitae lorem id, blandit ornare enim.
-
-review1Text: Lorem ipsum dolor sit amet, consectetur adipiscing
+offering2Headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+offering2Description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor
+  sapien, ultricies vitae lorem id, blandit ornare enim.
+review1Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 review1Citation: Firstname Surname via Yelp
-
-review2Text: Lorem ipsum dolor sit amet, consectetur adipiscing
+review2Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 review2Citation: Firstname Surname via Yelp
-
-review3Text: Lorem ipsum dolor sit amet, consectetur adipiscing
+review3Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 review3Citation: Firstname Surname via Yelp
-
 enquiryTitle: Make an enquiry
-enquiryDescription: Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing.
-
-address: "Suite 45, 2 London Bridge Walk <br/>London SE1 2SX"
-phone: "<strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519"
+enquiryDescription: >-
+  Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet,
+  consectetur adipiscing.
+address: 'Suite 45, 2 London Bridge Walk <br/>London SE1 2SX'
+phone: <strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519
 email: enquire@edinburghtailoredtours.com
-
-facebook: https://www.facebook.com/edinburghtailoredtours
-instagram: https://www.instagram.com/edinburghtailoredtours/
-twitter: http://twitter.com
-
-siteDescription: Tailored, private tours of the Scottish capital city of Edinburgh
+facebook: 'https://www.facebook.com/edinburghtailoredtours'
+instagram: 'https://www.instagram.com/edinburghtailoredtours/'
+twitter: 'http://twitter.com'
+siteDescription: 'Tailored, private tours of the Scottish capital city of Edinburgh'
