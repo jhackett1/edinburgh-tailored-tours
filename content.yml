@@ -1,4 +1,3 @@
-# Content variables for the nunjucks files live in here
 siteHeadline: Private tours, tailored to you
 siteSubheadline: Because one size doesn't fit all. Launching later this year
 
@@ -22,8 +21,8 @@ review3Citation: Firstname Surname via Yelp
 enquiryTitle: Make an enquiry
 enquiryDescription: Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing.
 
-address: Suite 45, 2 London Bridge Walk <br/>London SE1 2SX
-phone: <strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519
+address: "Suite 45, 2 London Bridge Walk <br/>London SE1 2SX"
+phone: "<strong>UK</strong>  +447498 036 295<br/><strong>US</strong>  001 323 284 519"
 email: enquire@edinburghtailoredtours.com
 
 facebook: https://www.facebook.com/edinburghtailoredtours
