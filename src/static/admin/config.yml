@@ -7,13 +7,12 @@ backend:
 media_folder: "src/img"
 public_folder: "/dist/img"
 
-editor:
-  preview: false
-
 collections:
   - label: "Pages"
     name: "pages"
     delete: false
+    editor:
+      preview: false
     files:
       - label: "Home page"
         name: "home"
